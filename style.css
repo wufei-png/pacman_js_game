@@ -1,0 +1,137 @@
+
+body{
+    background-color: #FFFFFF;
+}
+.map {
+    text-align: center;
+    
+    margin-top: 200px;
+}
+
+.row {
+    height: 51px;
+}
+.crash{
+    height: 20px;
+    width: 50px;
+}
+.cell {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid#CCCCCC;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.map img {
+    height: 50px;
+    width: 50x;
+    display: flex;
+    /* 弹性布局 美观 */
+    
+}
+
+.input_score{
+    font-family: '微软雅黑';
+    position: absolute;
+    left: 700px;
+    top:70px;
+    /* visibility : hidden; */
+}
+.info {
+    font-family: '微软雅黑';
+    position: absolute;
+    left: 700px;
+    top:130px;
+    font-size: 20px;
+}
+
+.info span{
+    position: relative;
+    left: 70px;
+}
+
+.result {
+    position: absolute;
+    left: 700px;
+    top: 300px;
+    height: 311px;
+    width: 320px;
+    margin: 8px;
+    z-index: 10px;
+}
+
+.result div {
+    position: absolute;
+    left: 60px;
+    top: 120px;
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    border: 2px solid pink;
+    text-align: center;
+}
+
+.result input {
+    position: absolute;
+    left: 60px;
+    bottom: 3px;
+    height: 20px;
+    width: 80px;
+}
+
+.intro {
+    position: absolute;
+    right: 170px;
+    top:400px;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul img {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top:5px;
+}
+
+ul li {
+    margin: 5px;
+}
+
+
+.btn_start { /* 按钮美化 */
+	width: 120px; /* 宽度 */
+	height: 35px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #1E90FF; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+    position: relative;
+    top:-5px;
+    left:100px;
+
+}
+.btn_start:hover { /* 鼠标移入按钮范围时改变颜色 */
+	background: #5599FF;
+}
+.double{
+    position: absolute;
+    top:300px;
+    right: 280px;
+    font-size: 20px;
+    font-family: '微软雅黑';
+    visibility: hidden;
+}
+.double_time{
+    font-size: 40px;
+    color: pink;
+}
