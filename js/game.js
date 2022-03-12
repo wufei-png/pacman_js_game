@@ -357,6 +357,7 @@ var pop = (result) => { //result=0通关；result=1失败；result=2踩到炸弹
 
 
 var start = () => {
+    StartGame.removeEventListener("click", start);
     game_on = 1;
     score = 0;
     time = 15;
