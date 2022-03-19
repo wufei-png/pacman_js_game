@@ -237,14 +237,16 @@ var handler = function (e) {
     let direction;
     switch (keyResult) {
         // 移动到边缘提示
-        case (37): //左
+        case 65: //左
+        case 37:
             if (pos.col == 0) show_crash(pos, 3);
             if (pos.col > 0) {
                 pos.col--;
                 direction = 3;
             }
             break;
-        case (38): //上
+        case 38: //上
+        case 87:
             if (pos.row == 0)
                 show_crash(pos, 0);
 
@@ -253,14 +255,16 @@ var handler = function (e) {
                 direction = 0;
             }
             break;
-        case (39): //右
+        case 39: //右
+        case 68:
             if (pos.col == MAP_SIZE.length - 1) show_crash(pos, 1);
             if (pos.col < MAP_SIZE.length - 1) {
                 pos.col++;
                 direction = 1;
             }
             break;
-        case (40): //下
+        case 40:
+        case 83: //下
             if (pos.row == MAP_SIZE.height - 1) show_crash(pos, 2);
             if (pos.row < MAP_SIZE.height - 1) {
                 pos.row++;
