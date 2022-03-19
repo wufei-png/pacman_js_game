@@ -237,6 +237,7 @@ var handler = function (e) {
     let direction;
     switch (keyResult) {
         // 移动到边缘提示
+        //可以同时使用wasd和方向键
         case 65: //左
         case 37:
             if (pos.col == 0) show_crash(pos, 3);
